@@ -1,0 +1,28 @@
+windows_attributes:
+  - window_attributes:
+      process_name: 'Notepad.exe'
+      width: 800
+      height: 600
+      x: 100
+      y: 100
+      use_coordinates: True
+      exclude_windows:
+        - exclude:
+            name: "Untitled - Notepad"
+  - window_attributes:
+      process_name: 'notepad++.exe'
+      width: 800
+      height: 600
+      x: 100
+      y: 100
+      use_coordinates: False
+using_grid: True
+grid:
+  - cell:
+      id: 1
+      x: 100
+      y: 1000
+  - cell:
+      id: 2
+      x: 100
+      y: 10

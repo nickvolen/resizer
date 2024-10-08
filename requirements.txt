@@ -1,0 +1,16 @@
+altgraph==0.17.4
+annotated-types==0.7.0
+keyboard==0.13.5
+packaging==24.1
+pefile==2024.8.26
+pillow==10.4.0
+pydantic==2.9.2
+pydantic_core==2.23.4
+pyinstaller==6.10.0
+pyinstaller-hooks-contrib==2024.8
+pystray==0.19.5
+pywin32==307
+pywin32-ctypes==0.2.3
+PyYAML==6.0.2
+six==1.16.0
+typing_extensions==4.12.2
