@@ -85,4 +85,6 @@ Tested for **python 3.10**
 
 You can use the console version of the application, but all settings will have to be done manually in the settings.yaml file, which is there by default as a template.
 
+It is recommended to run the executable files for the first time as administrator because of the creation of the settings file. Otherwise, you can grab the settings file from the repository.
+
 To build the console version, you need to follow steps 1-2 from the previous step and `pyintaller --distpath <DIST_PATH> resizer.spec`
