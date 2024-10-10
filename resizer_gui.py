@@ -69,14 +69,9 @@ if __name__ == "__main__":
     # Handler for the tray menu item "Quit"
     def quit_window(icon, item):
         root.after(0, root.deiconify)
-        result = askyesno(title="Program closing",
-                          message="The program will stop working. Are you sure you want to shut it down?")
-        if result:
-            icon.stop()
-            main_tab.stop_processing()
-            root.destroy()
-        else:
-            icon.stop()
+        icon.stop()
+        main_tab.stop_processing()
+        root.destroy()
 
 
     # Handler for the tray menu item "Show"
