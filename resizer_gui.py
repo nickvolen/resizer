@@ -89,7 +89,11 @@ if __name__ == "__main__":
     def withdraw_window():
         root.withdraw()
         image = Image.open(os.path.join(application_path, icon_file))
-        menu = (MenuItem("Show", show_window), MenuItem("Exit", quit_window))
+        menu = (MenuItem("Show", show_window),
+                MenuItem(lambda text: "Stop processing" if main_tab.is_processing else "Start processing",
+                         lambda x: main_tab.stop_processing() if main_tab.is_processing else main_tab.start_processing()),
+                MenuItem("Exit", quit_window),
+                )
         icon = pystray.Icon("resizer_icon", image, "Resizer", menu)
         icon.run()
 
